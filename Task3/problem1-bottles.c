@@ -37,7 +37,7 @@ void selection_sort(int b[],int n)
              {
                int temp;
                 temp=b[i];
-                b[i]=b[i+1];
-                b[i+1]=temp;
+                b[i]=b[j];
+                b[j]=temp;
             }
 }
