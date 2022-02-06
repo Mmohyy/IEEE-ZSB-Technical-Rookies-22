@@ -14,7 +14,7 @@ int main()
     printf("\n");
     for(i=0;i<t;i++){
        for(j=0;j<t;j++){
-        if (arr[i][j]==9)
+        if (arr[i][j]>arr[i][j-1] && arr[i][j]>arr[i][j+1] && arr[i][j]>arr[i-1][j] && arr[i][j]>arr[i+1][j])
             printf("%c",'X');
         else
             printf("%d",arr[i][j]);
